@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://cdn.bootcss.com/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+	<style>
+	body{
+		font-family: "Microsoft Yahei";
+		color: #333;
+	}
+	.wrapper{
+		width: 600px;
+		margin: 40px auto;
+	}
+	.font{
+		display: inline-block;
+		width: 80px;
+		margin: 5px;
+	}
+	.php{
+		width: 240px;
+		margin-left: 92px;	
+		margin-bottom: 20px;
+		/*border-bottom: solid 1px #999;*/
+		text-align: left;
+		padding: 10px 0;
+		font-size: 20px;
+		color: #F23D3D;
+		padding-left: 20px;
+		/*display: none;*/
+	}
+	//无法控制弹出的PHP内容中带有边框
+	.write{
+		width: 260px;
+	}
+	.error:before{
+		content: "*";
+		margin-left: 10px;
+	}
+	.error{
+		color: #F23D3D;
+	}
+	.submit{
+		color: #F23D3D;
+		font-weight: bold;
+		margin-left: 180px;
+		margin-top: 20px;
+		padding: 3px 10px;
+	}
+	.submit:hover{
+		color: #fff;
+		background-color: #F23D3D;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="php"></div>
+			<form method="post" action="">
+				<span class="font">Name:</span><input class="write" type="text" name="name"><span class="error"></span><br>
+				<span class="font">Email:</span><input class="write" type="text" name="email"><span class="error"></span><br>
+				<span class="font">Website:</span><input class="write" type="text" name="website"><span class="error"></span><br>
+				<span class="font">Comment:</span><textarea name="comment" id="" cols="30" rows="10"></textarea><span class="error"> </span><br>
+				<span class="font">Gender:</span>
+				<input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+				<input type="radio" name="gender" value="male" id="male"><label for="male">Male</label><span class="error"></span><br>
+				<input type="submit" class="submit" value="Submit">
+			</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+	*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration: none;color: inherit;}
+
+.clearfix:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+body{
+  background: white;
+  color: #666;
+  font:12px/1.5 Arial,Verdana,"\5b8b\4f53",serif;
+  -webkit-font-smoothing: antialiased;
+}
+.siteTopbar-wrapper{ 
+  background: #f1f1f1; 
+}
+.siteTopbar{
+  height: 30px;
+  line-height: 30px; 
+  width: 1210px;
+  margin: 0 auto;
+}
+/*location*/
+
+.location-wrapper{
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+.location{
+  padding: 0 10px;
+  display: inline-block;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.location:hover{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background: white;
+}
+.location-wrapper .fa-angle-down{
+  		position: relative;
+    	top:1px;
+
+}
+.location-wrapper:hover .fa-angle-down{
+  transform: rotate(180deg);
+  transition: transform 0.1s;
+}
+
+.location-wrapper:hover:after{
+  content:'';
+  display: block;
+  position: absolute;
+  height: 0;
+  border-top: 1px solid #C81623;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  box-sizing: border-box;
+  width: 100%;
+}
+.locationPicker{
+  line-height: 24px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.locationPicker > ol{
+  width: 300px;
+  background: white;
+  border: 1px solid #DDDDDD;
+  padding: 10px 0;
+  display: none;
+}
+.location-wrapper:hover .locationPicker > ol{
+  display: block;
+}
+.locationPicker > ol > li{
+  padding: 0 8px; height: 24px;
+  
+  float: left;
+  margin: 2px 10px;
+}
+.locationPicker > ol > li:hover{
+  background: #F4F4F4;
+  color: #C81623;
+  cursor: pointer;
+}
+.locationPicker > ol > li.selected{
+  background: #C81623;
+  color: white;
+}
+/* links */
+.siteTopbar .links{
+  float: right;
+}
+.siteTopbar .links>.split{
+  height: 15px;
+  width: 1px;
+  background: #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1px;
+}
+.siteTopbar .links>a{
+  padding: 0 8px;
+}
+.siteTopbar .links>a:nth-child(2){
+  color:#C81623;
+}
+.siteTopbar .links>a:hover{
+  color: #C81623;
+}
+	
+
+</style>
+</head>
+<body>
+   <div class="siteTopbar-wrapper">
+	<div class="siteTopbar">
+	<div class="location-wrapper">
+		<span class="location">送至：北京 <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+   		<div class="locationPicker">
+   		<ol class="clearfix">
+   			<li class="selected"><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   			<li><a href="#">地区</a></li>
+   		</ol>
+   		</div>
+   	</div>
+	
+	<div class="links">
+   		<a href="#">你好，请登录 </a>
+   		<a href="#">免费注册</a>
+   		<span class="split"></span>
+   		<a href="#">我的订单</a>
+      	<span class="split"></span>
+        <a href="#">我的京东</a>
+      	<span class="split"></span>
+        <a href="#">京东会员 </a>
+      	<span class="split"></span>
+        <a href="#">企业采购 </a>
+      	<span class="split"></span>
+        <a href="#">手机京东 </a>
+        <span class="split"></span>
+        <a href="#">关注京东 </a>
+        <span class="split"></span>
+        <a href="#">客户服务</a>
+        <span class="split"></span>
+        <a href="#">网站导航</a>
+    </div>
+   </div>
+  </div>
+</body>
+</html>
